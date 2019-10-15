@@ -9,7 +9,7 @@ const Index = ({ sessions }) => {
   const [sessionInfo, setSessionInfo] = useState({ offset: 0 });
   const [isLoading, setIsLoading] = useState(false);
 
-  const prefix = `https://${host}/api/session/${sessionId}`;
+  const prefix = `//${host}/api/session/${sessionId}`;
   const urls = {
     timestamp: `${prefix}/timestamp`,
     addSeconds: `${prefix}/add/`,
